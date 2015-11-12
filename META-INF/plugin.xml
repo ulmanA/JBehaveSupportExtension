@@ -1,0 +1,62 @@
+<!--
+  ~ Copyright 2011-12 Aman Kumar
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<idea-plugin version="2" url="https://github.com/ulmana/JBehaveSupportExtension">
+  <name>JBehave Support Extension</name>
+  <id>jbehave-support-plugin-extension</id>
+  <description><![CDATA[
+    <h1>IntelliJ IDEA Plugin for JBehave Support</h1>
+    <h2>That plugin is extension for JBehave Support plugin</h2>
+    <p>
+    <br/>
+    credits for:
+    <ul>
+        <li> The original creator of IntelliJBehave Plugin: <a href="https://github.com/kumaraman21">https://github.com/kumaraman21</a></li>
+        <li> The creator of JBehave Support Plugin:<a href="https://github.com/witspirit">https://github.com/witspirit</a></li>
+        <li> All the contributors for the JBehave Support:<a href="https://github.com/witspirit/IntelliJBehave/graphs/contributors">https://github.com/witspirit/IntelliJBehave/graphs/contributors</a></li>
+    </ul>
+    </p>
+
+
+
+    <p>
+    The plugin provides the following features:
+    </p>
+    <ul>
+    <li> Step Completion on .story files - Suggests all the JBehave Steps that exist on the Project and its Libraries </li>
+    </ul>
+
+  ]]></description>
+  <version>1.00</version>
+  <vendor url="https://github.com/ulmana" email="ulman.avi@gmail.com">Avi Ulman</vendor>
+
+  <idea-version since-build="133.0"/>
+
+    <depends>jbehave-support-plugin</depends>
+
+  <application-components>
+
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+
+  <extensions defaultExtensionNs="com.intellij">
+    <completion.contributor language="Story"
+                            implementationClass="com.github.ulmana.jbehave.support.extention.completion.StoryFullCompletionContributor"/>
+  </extensions>
+</idea-plugin>
