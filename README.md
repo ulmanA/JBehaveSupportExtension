@@ -1,4 +1,4 @@
-Extended JBehave Support for IntelliJ IDEA
+JBehave Support plugin extention for IntelliJ IDEA
 =================================
 
 IntelliJ IDEA Plugin for JBehave
